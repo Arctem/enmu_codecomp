@@ -1,36 +1,66 @@
+\documentclass{../codeproblem}
 
+\begin{document}
 \title{Catching Spies}
 %Maybe tweak difficulty higher by increasing spy count.
 %Could also add feedback on both success and fail missions, to force them to discard irrelevant data.
 
+\begin{flavor}
 You are a member of the Resistance fighting the Evil Empire of Evilness. You are sure that 2 Imperial spies have infiltrated the Resistance (consisting of 6 members total), but you are not sure who to suspect. The only clue you have is which recent missions have been sabotaged, as well as which members of the Resistance went on each mission.
+\end{flavor}
 
-Write a program that takes in details on recent sabotaged missions, then determine how many possible spy teams each member of the Resistance could be. A spy team is defined as a pairing of two members of the Resistance such that every mission known to fail has at least one of those members on it.
+\section*{Description}
+Write a program that takes in details on recent sabotaged missions, then determine how many possible spy teams each member of the Resistance could be. A spy team is defined as a pair of members of the Resistance such that every mission known to fail has at least one of those members on it.
 
-Each mission will be input as a list of space-separated integers ranging 1 to 6. An input line of \verb{0} will terminate input. You may assume that no more than 5 missions will be input.
+Each mission will be input as a list of space-separated integers ranging 1 to 6. An input line of 0 will terminate input. You may assume that no more than 5 missions will be input.
 
 Output will consist of each member of the Resistance's number, followed by how many valid spy teams they are a member of.
 
-Sample 1:
+\section*{Samples}
+\begin{minipage}[t]{.33\linewidth}
+\begin{example}
 1 2 3
 4 5 6
 0
 
-1: 3
-2: 3
-3: 3
-4: 3
-5: 3
-6: 3
+|\textbf{1: 3}|
+|\textbf{2: 3}|
+|\textbf{3: 3}|
+|\textbf{4: 3}|
+|\textbf{5: 3}|
+|\textbf{6: 3}|
 
-Sample 2:
+|\end{example}
+\end{minipage}
+\begin{minipage}[t]{.33\linewidth}
+\begin{example}
+3 4
+2 4 5
+2 3
+3 6
+0
+
+|\textbf{1: 0}|
+|\textbf{2: 1}|
+|\textbf{3: 3}|
+|\textbf{4: 1}|
+|\textbf{5: 1}|
+|\textbf{6: 0}\end{example}
+\end{minipage}
+\begin{minipage}[t]{.33\linewidth}
+\begin{example}
 1 2
 2 3 4
 5 6
+0
 
-1: 0
-2: 2
-3: 0
-4: 0
-5: 1
-6: 1
+|\textbf{1: 0}|
+|\textbf{2: 2}|
+|\textbf{3: 0}|
+|\textbf{4: 0}|
+|\textbf{5: 1}|
+|\textbf{6: 1}|
+|\end{example}
+\end{minipage}
+
+\end{document}
