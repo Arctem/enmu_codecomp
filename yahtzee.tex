@@ -1,0 +1,33 @@
+
+\title{Decoding Messages}
+
+You have intercepted a number of transmissions from the Evil Empire of Evilness. Though you have been able to translate much of the text, they are using a clever cipher to disguise their numbers. Unless you are able to decode these numbers, there is no way to properly sabotage the Empire's plans!
+
+Each Imperial Cipher consists of 5 integers, ranging from 1 to 6. You must convert each group of numbers into the value it represents, using one of the following rules:
+
+\begin{tabular}{| r | l |}
+  Number Pattern & Example & Value\\\hline
+  Five of one number & 4 4 4 4 4 & 50\\\hline
+  Four of one number & 3 1 3 3 3 & Sum of all values\\\hline
+  Three of one number & 6 1 6 6 4 & Sum of all values\\\hline
+  Three of one number, two of another number & 3 3 5 3 5 & 25\\\hline
+  Five sequential values & 4 5 3 1 2 & 40\\\hline
+  Four sequential values & 6 3 4 1 5 & 30\\\hline
+  Any numbers & 2 2 1 5 6 & Sum of all values\\\hline
+\end{tabular}
+
+Note that order does not matter for any pattern.
+
+In the case where the set of integers would fulfill multiple of these patterns, the largest possible value is chosen.
+
+Input will be space-separated 5 integers, ranging from 1 to 6. Output will be the value those integers represent. An input of \verb{0} will indicate end of input.
+
+Sample:
+2 4 1 3 5
+40
+
+6 6 5 5 6
+28
+
+0
+
