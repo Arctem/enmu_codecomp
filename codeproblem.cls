@@ -47,6 +47,7 @@ mathescape=true}
 \newenvironment{example}
 {
   \vspace{1em}
+  \begin{center}
   \begin{minipage}{\linewidth}
     \begin{center}
       \begin{adjustbox}{minipage=.5\linewidth,
@@ -60,6 +61,7 @@ mathescape=true}
       \end{adjustbox}
     \end{center}
   \end{minipage}
+  \end{center}
   \vspace{1em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
