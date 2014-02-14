@@ -13,9 +13,19 @@
 \usepackage{fouriernc}                 %Changes font
 \usepackage[T1]{fontenc}               %Changes font
 \usepackage{fancyhdr, lscape, lastpage}%Used for header
+\usepackage{listings}                  %Used for example
+\usepackage{bera}                      %Used for monospace bold.
 %Setmargins
 \usepackage[includeheadfoot,margin=0.75in]{geometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Setup listing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{basicstyle=\ttfamily,
+escapeinside={||},
+mathescape=true}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %Init header
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,26 +39,28 @@
 
 %Title
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\title}[1]{\vspace*{5em}\centerline{\textbf{\Huge #1}}\vspace{5em}}
+\renewcommand{\title}[1]{\vspace*{1em}\centerline{\textbf{\Huge #1}}\vspace{3em}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Example
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{example}
 {
-  \vspace{3em}
+  \vspace{1em}
   \begin{minipage}{\linewidth}
     \begin{center}
       \begin{adjustbox}{minipage=.5\linewidth,
           margin=1ex,
           bgcolor={HTML}{D9ECFF}
         }
+        \begin{lstlisting}
 }
-{%
+{
+        \end{lstlisting}
       \end{adjustbox}
     \end{center}
   \end{minipage}
-  \vspace{3em}
+  \vspace{1em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
