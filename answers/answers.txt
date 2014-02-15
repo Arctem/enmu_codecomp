@@ -43,3 +43,42 @@ E F
 F
 Output:
 A B F
+
+
+Input:
+A B D
+B E
+C F
+D C
+E C F
+C
+Output:
+A D C
+
+Input:
+A B D F
+B C
+D C E
+F E
+C
+Output:
+A D C
+or 
+A B C
+
+Input:
+A B
+B C
+C E
+E F
+F
+Output:
+A B C D E F
+
+
+****************************************************************
+
+PROBLEM 3
+
+Input:
+
