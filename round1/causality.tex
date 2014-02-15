@@ -1,0 +1,48 @@
+\documentclass{../codeproblem}
+
+\begin{document}
+
+\title{I'm Sorry I Killed an}
+\vspace{-3em}
+\title{Ant and Created a Tyrant}
+
+\begin{flavor}
+  It's hard keeping track of what is and isn't your fault when
+  traveling through time...or talking to women.
+\end{flavor}
+
+\section*{Description}
+As per the Code of Ethics of Time Travel, one must be careful with any
+changes that are made. When you're lazy, like Seymore, paying
+attention to all those silly effects (avalanche, domino, butterfly) is
+just too much effort so why not just do whatever and apologize when
+things go wrong later! What's the saying? It's easier to get
+forgiveness than attention?
+
+Your task is potentially catastrophic --- given a list of chain reactions resulting
+from something Seymore did (event A) and a worrying end case,
+determine if the end event was Mr. Traveler's fault so he can send
+back apology flowers.
+
+\section*{Example Input/Output}
+You will be given a variable number of lines consisting of upper-case
+letters. The first letter of each line is the causing event and each
+letter following it is a resulting effect. The last line in the
+list will have a single letter. You must determine if this event
+(letter) was caused by Mr. Traveler (event A). It will always be a
+directed acyclic graph.
+
+\begin{example}
+|\textbf{input:}|
+A B 
+B C
+C
+|\textbf{output:}|true
+|\textbf{input:}|
+A B
+C D
+D
+|\textbf{output:}|false
+|\end{example}
+
+\end{document}
