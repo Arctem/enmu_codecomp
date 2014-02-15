@@ -4,13 +4,12 @@ PROBLEM 1
 Input:
 230 311
 Output:
--5.4
+5.4
 
 Input:
-311
-230
+311 230
 Output
-5.4
+-5.4
 
 Input:
 0 1
