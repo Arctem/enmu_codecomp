@@ -2,34 +2,69 @@
 
 \begin{document}
 
-\title{Shoots and SPACE-LADDERS}
+\title{Chutes and SPACE-LADDERS}
 
 \begin{flavor}
   While exploring the future, Seymore Time Traveler discovered a new
-  technology --- FUTER-SPACE-PORTAL technology!
+  technology --- the LASER-AIDED-DIMENSIONAL-DRIFT-ENERGY-RIDER!
 \end{flavor}
 
 \section*{Description}
-Our hero, again, is in a predicament of laziness. He has discovered
-many world, connected together by \emph{SPACE WORMHOLE THINGS}! He
+Our hero is, yet again, in a predicament of laziness. He has discovered
+many exciting new worlds, connected together by \emph{SPACE WORMHOLES}! He
 would love to travel through them\ldots but he doesn't want to travel
 through \emph{too} many wormholes (because that sounds hard).
 
 Your task, should you choose to accept it, is to find the shortest
-path from the starting world, to the destination of Seymore's choice.
+path from the starting world to the destination of Seymore's choice.
 
 \section*{Example Input/Output}
 
-You will be given $n+1$ lines of input, where $n$ is the number of
-worlds. Each of the first $n$ lines will be a world name (a single
-upper-case character), followed by a list of each 
+Each of the first $n$ lines of input will be a world name (a single
+upper-case character), followed by a list of each connected world. 
+. The $n+1$'th line will be a single upper-case
+letter, designating the desired destination. You must output a
+sequence of letters that represents the shortest path to the
+destination. Assume you start at the first given world. You can assume
+a path will always exist. There will be less than 10 worlds given.
+If multiple valid paths exist, any will be accepted.
 
-\begin{example}
-|\textbf{input:}| 0 360
-|\textbf{output:}| 0.0
 
-|\textbf{input:}| 320 200
-|\textbf{output:}| -8.0
+\begin{minipage}{.33\linewidth}
+  \begin{example}
+|\textbf{input:}|
+A B D
+B C D
+C
+|\textbf{output:}|
+A B C
+
+
 |\end{example}
+\end{minipage}
+\begin{minipage}{.33\linewidth}
+\begin{example}
+|\textbf{input:}|
+A B D
+B C D
+A
+|\textbf{output:}|
+A
+
+
+|\end{example}
+\end{minipage}
+\begin{minipage}{.33\linewidth}
+\begin{example}
+|\textbf{input:}|
+A B C D
+B F
+D B C
+F E
+E
+|\textbf{output:}|
+A B C E
+|\end{example}
+\end{minipage}
 
 \end{document}
