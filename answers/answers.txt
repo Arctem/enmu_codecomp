@@ -81,4 +81,68 @@ A B C D E F
 PROBLEM 3
 
 Input:
+A F
+B F
+C F
+D F
+E F
+F
+Output:
+true
 
+Input:
+A F
+B F
+C F
+D F
+E F
+B
+Output:
+false
+
+Input:
+A B
+B E
+C D
+D E
+E
+Output:
+true
+
+Input:
+A B
+B E
+C D
+D E
+C
+Output:
+false
+
+Input:
+A J
+B G
+C D
+D E F
+E G I
+F I G
+H I
+J L K
+G H
+I
+Output:
+false
+
+
+Input:
+A J
+B G
+C D
+D E F
+E G I
+F I G
+H I
+J L K
+G H
+L
+Output:
+True
