@@ -42,3 +42,140 @@ E F
 F
 Output:
 A B F
+
+
+Input:
+A B D
+B E
+C F
+D C
+E C F
+C
+Output:
+A D C
+
+Input:
+A B D F
+B C
+D C E
+F E
+C
+Output:
+A D C
+or 
+A B C
+
+Input:
+A B
+B C
+C E
+E F
+F
+Output:
+A B C D E F
+
+
+****************************************************************
+
+PROBLEM 3
+
+Input:
+A F
+B F
+C F
+D F
+E F
+F
+Output:
+true
+
+Input:
+A F
+B F
+C F
+D F
+E F
+B
+Output:
+false
+
+Input:
+A B
+B E
+C D
+D E
+E
+Output:
+true
+
+Input:
+A B
+B E
+C D
+D E
+C
+Output:
+false
+
+Input:
+A J
+B G
+C D
+D E F
+E G I
+F I G
+H I
+J L K
+G H
+I
+Output:
+false
+
+
+Input:
+A J
+B G
+C D
+D E F
+E G I
+F I G
+H I
+J L K
+G H
+L
+Output:
+True
+
+
+****************************************************************
+
+PROBLEM 4:
+
+Valid input only
+
+
+Input:
+A B 2
+A C 4
+A D 9
+B C 5
+B D 8
+C D 12
+
+
+Input:
+A B 9
+A C 10
+A D 5
+B C 4
+B D 13
+C D 14
+
+
+Input:
+A B 5
+A C 5
+A D 11
+B C 5
+B D 7
+C D 7
