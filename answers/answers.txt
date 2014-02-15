@@ -146,3 +146,37 @@ G H
 L
 Output:
 True
+
+
+****************************************************************
+
+PROBLEM 4:
+
+Valid input only
+
+
+Input:
+A B 2
+A C 4
+A D 9
+B C 5
+B D 8
+C D 12
+
+
+Input:
+A B 9
+A C 10
+A D 5
+B C 4
+B D 13
+C D 14
+
+
+Input:
+A B 5
+A C 5
+A D 11
+B C 5
+B D 7
+C D 7
