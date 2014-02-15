@@ -1,0 +1,45 @@
+
+PROBLEM 1
+
+Input:
+230 311
+Output:
+-5.4
+
+Input:
+311
+230
+Output
+5.4
+
+Input:
+0 1
+Output:
+0.06666
+
+
+
+****************************************************************
+
+
+PROBLEM 2
+
+Input:
+A B C D E F
+B C D E F
+C D E F
+D E F
+E F
+F
+Output:
+A F
+
+Input:
+A B C D E
+B C D E F
+C D E F
+D E F
+E F
+F
+Output:
+A B F
