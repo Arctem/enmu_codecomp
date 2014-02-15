@@ -1,0 +1,48 @@
+\documentclass{../codeproblem}
+
+\begin{document}
+\title{The Language of Time}
+
+\begin{flavor}
+  As you sneak into the IEEE's headquarters, you hear a strange sound --- \emph{Z-BWOMPH}! In front of you appears a mysterious device. A door opens up and out comes two men: one wearing a robe and slippers, the other a scowl and the skins of his enemies. ``Can you help us fix our time machine?'' Seymore asks.
+\end{flavor}
+
+\section*{Description}
+The language synthesizer on Seymore's time machine is broken. It's failing to recognize which phrases are valid expressions of time.
+
+A proper expression of time consists of a list.
+
+A list is defined as one of the following: (element), (element element>, or (element element element{
+
+An element is defined as one of the following: list, equation, or ][
+
+An equation is defined as one of the following: element operator element, or element operator
+
+The valid operators are: +, -, *, /, \} \#, \%, \&
+
+All characters not mentioned above are invalid. Spaces will not occur in any sequences.
+
+The input will be a sequence of characters. Output will be true if the sequence is a valid expression of time, or false if it is not.
+
+\section*{Examples}
+
+\begin{example}
+(][][][{
+|\textbf{true}\end{example}
+
+\begin{example}
+((][][+(][)][{})
+|\textbf{true}\end{example}
+
+\begin{example}
+((][][+(][)][{}>
+|\textbf{false}\end{example}
+
+
+%sentence: list
+%element: list or equation or ][
+%equation: element operator element|empty
+%list: (element) or (element element> or (element element element{
+%operator: +, -, *, /, }, #, \%, ^
+
+\end{document}

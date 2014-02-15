@@ -6,11 +6,13 @@
 %Could also add feedback on both success and fail missions, to force them to discard irrelevant data.
 
 \begin{flavor}
-  You are a member of the Resistance fighting the Evil Empire of Evilness. You are sure that 2 Imperial spies have infiltrated the Resistance (consisting of 6 members total), but you are not sure who to suspect. The only clue you have is which recent missions have been sabotaged, as well as which members of the Resistance went on each mission.
+  You are sure that 2 Imperial spies have infiltrated the Resistance (consisting of 6 members total), but you are not sure who to suspect. The only clue you have is which recent missions have been sabotaged, as well as which members of the Resistance went on each mission.
 \end{flavor}
 
 \section*{Description}
 Write a program that takes in details on recent sabotaged missions, then determine how many possible spy teams each member of the Resistance could be. A spy team is defined as a pair of members of the Resistance such that every mission known to fail has at least one of those members on it.
+
+For example, assume members 1, 2, and 3 went on the first failed mission while members 4 and 5 went on the second failed mission. The valid spy teams that member 1 can be on consist of 1 and 4, and 1 and 5. 1 cannot be on a spy team with 2, 3, or 6, as that would leave the second failed mission with no spies on it.
 
 Each mission will be input as a list of space-separated integers ranging 1 to 6. An input line of 0 will terminate input. You may assume that no more than 5 missions will be input.
 
